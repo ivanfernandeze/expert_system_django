@@ -25,6 +25,7 @@ class RecomendacionEngine(KnowledgeEngine):
         edad_recomendada=MATCH.edad,
         idioma_local=MATCH.idioma
     ))
+    
     def evaluar_preferencias(self, clima, actividad, presupuesto, duracion, pref_cult, edad, idioma):
         """
         recorre los destinos basados en los match
