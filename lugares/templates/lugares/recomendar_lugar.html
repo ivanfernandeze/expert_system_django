@@ -1,3 +1,5 @@
+<!-- lugares/templates/lugares/recomendar_lugar.html -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +14,7 @@
             margin-bottom: 30px;
         }
         .recomendation {
-            border: 1px solid 
+            border: 1px solid #ccc;
             padding: 15px;
             margin-bottom: 15px;
             border-radius: 5px;
@@ -45,11 +47,7 @@
                 {% for lugar in recomendaciones %}
                     <div class="recomendation row">
                         <div class="col-md-4">
-                            {% if lugar.imagen_url %}
-                                <img src="{{ lugar.imagen_url }}" alt="{{ lugar.nombre }}" class="img-fluid">
-                            {% else %}
-                                <img src="https://via.placeholder.com/300x200.png?text=Sin+Imagen" alt="{{ lugar.nombre }}" class="img-fluid">
-                            {% endif %}
+                            <img src="{{ lugar.imagen_url }}" alt="{{ lugar.nombre }}" class="img-fluid">
                         </div>
                         <div class="col-md-8">
                             <h3>{{ lugar.nombre }}</h3>

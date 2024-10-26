@@ -21,7 +21,10 @@ def obtener_recomendaciones(preferencias):
     recomendaciones = []
     for destino in destinos:
         descripcion = destino.descripcion if destino.descripcion else "Descripción no disponible."
-        imagen_url = destino.imagen if destino.imagen else "https://via.placeholder.com/300x200.png?text=Sin+Imagen"
+        if destino.imagen:
+            imagen_url = destino.imagen
+        else:
+            imagen_url = "https://via.placeholder.com/300x200.png?text=Sin+Imagen"
         recomendaciones.append({
             'nombre': destino.nombre,
             'descripcion': descripcion,
@@ -29,4 +32,3 @@ def obtener_recomendaciones(preferencias):
         })
 
     return recomendaciones
-    

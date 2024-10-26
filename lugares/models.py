@@ -9,7 +9,7 @@ class Destino(models.Model):
     edad_recomendada = models.JSONField()
     idioma_local = models.JSONField()
     descripcion = models.TextField(blank=True, null=True)
-    imagen = models.ImageField(upload_to='imagenes_lugares/', blank=True, null=True)  
+    imagen = models.URLField(blank=True, null=True)
 
     def __str__(self):
         return self.nombre

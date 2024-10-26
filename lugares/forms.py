@@ -1,5 +1,3 @@
-# lugares/forms.py
-
 from django import forms
 
 class PreferenciasForm(forms.Form):

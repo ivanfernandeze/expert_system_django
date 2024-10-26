@@ -7,7 +7,7 @@
         "edad_recomendada": ["niños", "jovenes", "adultos"],
         "idioma_local": ["español", "ingles"]
     },
-    "Montaña de Colores": {
+    "Vinicunca": {
         "clima": ["frio", "seco"],
         "actividades": ["caminata", "aventura", "observacion de la naturaleza"],
         "presupuesto": ["alto", "medio", "bajo"],
@@ -15,7 +15,7 @@
         "edad_recomendada": ["jovenes", "adultos"],
         "idioma_local": ["español"]
     },
-    "Cusco": {
+    "Cuzco": {
         "clima": ["templado", "seco", "frío"],
         "actividades": ["turismo", "gastronomía", "visitas culturales"],
         "presupuesto": ["alto", "medio"],
@@ -39,7 +39,7 @@
         "edad_recomendada": ["jóvenes", "adultos"],
         "idioma_local": ["español", "inglés"]
     },
-    "Cañón del Colca": {
+    "Valle del Colca": {
         "clima": ["frío", "seco"],
         "actividades": ["senderismo", "observación de cóndores"],
         "presupuesto": ["medio", "bajo"],
@@ -55,7 +55,7 @@
         "edad_recomendada": ["jóvenes", "adultos"],
         "idioma_local": ["español", "inglés"]
     },
-    "Ruinas de Ollantaytambo": {
+    "Ollantaytambo": {
         "clima": ["templado", "seco"],
         "actividades": ["exploración de ruinas", "caminatas"],
         "presupuesto": ["medio", "alto"],
@@ -63,7 +63,7 @@
         "edad_recomendada": ["niños", "jóvenes", "adultos"],
         "idioma_local": ["español", "quechua"]
     },
-    "Cañon de Apurímac": {
+    "Cañón del Apurímac": {
         "clima": ["templado", "seco"],
         "actividades": ["senderismo", "rafting", "escalada"],
         "presupuesto": ["medio", "alto"],
@@ -223,7 +223,7 @@
         "edad_recomendada": ["niños", "jóvenes", "adultos"],
         "idioma_local": ["español", "inglés"]
     },
-    "Valle de la Luna (Ischigualasto)": {
+    "Ischigualasto": {
         "clima": ["seco", "árido"],
         "actividades": ["turismo aventura", "senderismo", "fotografía"],
         "presupuesto": ["medio", "bajo"],
@@ -303,7 +303,7 @@
         "edad_recomendada": ["niños", "jóvenes", "adultos"],
         "idioma_local": ["español", "inglés"]
     },
-    "Cocora Valley": {
+    "Valle de Cocora": {
         "clima": ["templado", "húmedo"],
         "actividades": ["senderismo", "observación de flora", "fotografía"],
         "presupuesto": ["medio", "bajo"],
@@ -447,7 +447,7 @@
         "edad_recomendada": ["niños", "jóvenes", "adultos"],
         "idioma_local": ["portugués", "inglés"]
     },
-    "Cerro do Rio do Rastro": {
+    "Serra do Rio do Rastro": {
         "clima": ["templado", "frío"],
         "actividades": ["turismo", "fotografía", "senderismo"],
         "presupuesto": ["medio"],

@@ -3,7 +3,6 @@ from django.core.management.base import BaseCommand
 from lugares.models import Destino
 import os
 from lugares.services.wikipedia_service import WikipediaService
-from django.core.files import File
 
 class Command(BaseCommand):
     help = 'Carga destinos turísticos desde un archivo JSON y obtiene descripción e imagen desde Wikipedia'
@@ -48,6 +47,7 @@ class Command(BaseCommand):
                 'edad_recomendada': edad_recomendada,
                 'idioma_local': idioma_local,
                 'descripcion': descripcion if descripcion else "Descripción no disponible.",
+                'imagen': imagen_url if imagen_url else None,  # Asignar directamente la URL de la imagen
             }
 
             try:
@@ -57,12 +57,7 @@ class Command(BaseCommand):
                 )
 
                 if imagen_url:
-                    nombre_imagen, image_content = WikipediaService.descargar_imagen(imagen_url, nombre)
-                    if nombre_imagen and image_content:
-                        destino.imagen.save(nombre_imagen, File(image_content), save=True)
-                        self.stdout.write(self.style.SUCCESS(f"Imagen para '{nombre}' guardada correctamente."))
-                    else:
-                        self.stdout.write(self.style.WARNING(f"No se pudo descargar la imagen para '{nombre}'."))
+                    self.stdout.write(self.style.SUCCESS(f"Imagen para '{nombre}' asignada correctamente."))
                 else:
                     self.stdout.write(self.style.WARNING(f"No se encontró una imagen para '{nombre}'."))
 

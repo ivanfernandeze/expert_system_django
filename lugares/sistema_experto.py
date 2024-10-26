@@ -20,7 +20,7 @@ class RecomendacionEngine(KnowledgeEngine):
         clima=MATCH.clima,
         actividad=MATCH.actividad,
         presupuesto=MATCH.presupuesto,
-        duracion=MATCH.duracion,
+        duracion=MATCH.duracion,    
         preferencias_culturales=MATCH.pref_cult,
         edad_recomendada=MATCH.edad,
         idioma_local=MATCH.idioma
