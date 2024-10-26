@@ -27,9 +27,6 @@ class RecomendacionEngine(KnowledgeEngine):
     ))
     
     def evaluar_preferencias(self, clima, actividad, presupuesto, duracion, pref_cult, edad, idioma):
-        """
-        recorre los destinos basados en los match
-        """
         pesos = {
             "clima": 2,
             "actividades": 4,
@@ -41,7 +38,7 @@ class RecomendacionEngine(KnowledgeEngine):
         }
         destinos = Destino.objects.all()
         mejor_puntaje = 0
-        mejor_destino = []
+        puntuaciones = []
 
         for destino in destinos:
             puntaje = 0
@@ -60,13 +57,17 @@ class RecomendacionEngine(KnowledgeEngine):
             if idioma in destino.idioma_local:
                 puntaje += pesos.get('idioma_local', 0)
 
+            puntuaciones.append((destino, puntaje))
             if puntaje > mejor_puntaje:
                 mejor_puntaje = puntaje
-                mejor_destino = [destino]
-            elif puntaje == mejor_puntaje:
-                mejor_destino.append(destino)
 
-        self.recomendaciones = mejor_destino
+        # Selecciona destinos con puntaje dentro del 80% del mejor puntaje
+        umbral = 0.8 * mejor_puntaje
+        self.recomendaciones = [
+            {"destino": destino, "puntaje": puntaje} 
+            for destino, puntaje in puntuaciones 
+            if puntaje >= umbral
+        ]
 
     def obtener_recomendaciones(self):
         return self.recomendaciones

@@ -1,10 +1,6 @@
 from lugares.sistema_experto import RecomendacionEngine, PreferenciaUsuario
 
 def obtener_recomendaciones(preferencias):
-    """
-    :param preferencias: dict con las preferencias del usuario.
-    :return: lista de dicts con destino, descripcion, imagen_url.
-    """
     engine = RecomendacionEngine(preferencias)
     engine.declare(PreferenciaUsuario(
         clima=preferencias.get('clima', ''),
@@ -19,16 +15,21 @@ def obtener_recomendaciones(preferencias):
     destinos = engine.obtener_recomendaciones()
 
     recomendaciones = []
-    for destino in destinos:
+    max_puntaje = max(destino["puntaje"] for destino in destinos) if destinos else 1  # evitar división por cero
+
+    for destino_info in destinos:
+        destino = destino_info["destino"]
+        puntaje = destino_info["puntaje"]
         descripcion = destino.descripcion if destino.descripcion else "Descripción no disponible."
-        if destino.imagen:
-            imagen_url = destino.imagen
-        else:
-            imagen_url = "https://via.placeholder.com/300x200.png?text=Sin+Imagen"
+        imagen_url = destino.imagen if destino.imagen else "https://via.placeholder.com/300x200.png?text=Sin+Imagen"
+        
+        # Calcula el porcentaje de precisión
+        porcentaje_precision = (puntaje / max_puntaje) * 100
         recomendaciones.append({
             'nombre': destino.nombre,
             'descripcion': descripcion,
-            'imagen_url': imagen_url
+            'imagen_url': imagen_url,
+            'porcentaje_precision': round(porcentaje_precision, 2)
         })
 
     return recomendaciones
