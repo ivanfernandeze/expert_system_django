@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recomendación de Lugares Turísticos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-container, .recomendations-container, .mensaje {
+            margin-bottom: 30px;
+        }
+        .recomendation {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .recomendation img {
+            max-width: 100%;
+            height: auto;
+        }
+        .mensaje {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Encuentra tu Próximo Destino Turístico</h1>
+    <div class="form-container">
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Obtener Recomendaciones</button>
+        </form>
+    </div>
+
+    {% if recomendaciones %}
+        <div class="recomendations-container">
+            <h2>Te recomendamos los siguientes lugares:</h2>
+            {% for lugar in recomendaciones %}
+                <div class="recomendation">
+                    <h3>{{ lugar.nombre }}</h3>
+                    <p>{{ lugar.descripcion }}</p>
+                    {% if lugar.imagen %}
+                        <img src="{{ lugar.imagen.url }}" alt="{{ lugar.nombre }}">
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    {% elif mensaje %}
+        <div class="mensaje">
+            <p>{{ mensaje }}</p>
+        </div>
+    {% endif %}
+</body>
+</html>
