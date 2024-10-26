@@ -29,3 +29,4 @@ def obtener_recomendaciones(preferencias):
         })
 
     return recomendaciones
+    
