@@ -1,9 +1,14 @@
 LUGARES = [
     "Machu Picchu",
+    "Montaña de Colores",
+    "Cancún",
+    "Maldivas",
+    "Bahamas",
     "Torre Eiffel",
-    "Gran Muralla China",
-    "Estatua de la Libertad",
-    "Coliseo Romano",
-    "Pirámides de Giza",
     "Santorini",
+    "Los Alpes",
+    "Rocky Mountains",
+    "París",
+    "Nueva York",
+    "Tokio",
 ]

@@ -1,0 +1,485 @@
+{
+    "Machu Picchu": {
+        "clima": ["calido", "humedo", "lluvioso"],
+        "actividades": ["senderismo", "turismo", "aventura", "observacion de la naturaleza"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["gastronomia", "historia", "arquitectura", "artesania"],
+        "edad_recomendada": ["niños", "jovenes", "adultos"],
+        "idioma_local": ["español", "ingles"]
+    },
+    "Montaña de Colores": {
+        "clima": ["frio", "seco"],
+        "actividades": ["caminata", "aventura", "observacion de la naturaleza"],
+        "presupuesto": ["alto", "medio", "bajo"],
+        "preferencias_culturales": ["naturaleza"],
+        "edad_recomendada": ["jovenes", "adultos"],
+        "idioma_local": ["español"]
+    },
+    "Cusco": {
+        "clima": ["templado", "seco", "frío"],
+        "actividades": ["turismo", "gastronomía", "visitas culturales"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["historia", "arquitectura", "artesanía"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Arequipa": {
+        "clima": ["templado", "seco"],
+        "actividades": ["turismo histórico", "gastronomía", "caminatas"],
+        "presupuesto": ["medio", "bajo"],
+        "preferencias_culturales": ["historia", "arquitectura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Huacachina": {
+        "clima": ["desértico", "caliente"],
+        "actividades": ["sandboarding", "paseos en buggy"],
+        "presupuesto": ["medio", "bajo"],
+        "preferencias_culturales": ["aventura", "naturaleza"],
+        "edad_recomendada": ["jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Cañón del Colca": {
+        "clima": ["frío", "seco"],
+        "actividades": ["senderismo", "observación de cóndores"],
+        "presupuesto": ["medio", "bajo"],
+        "preferencias_culturales": ["naturaleza", "aventura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "quechua"]
+    },
+    "Parque Nacional Huascarán": {
+        "clima": ["frío", "seco"],
+        "actividades": ["senderismo", "escalada"],
+        "presupuesto": ["medio", "alto"],
+        "preferencias_culturales": ["naturaleza", "aventura"],
+        "edad_recomendada": ["jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Ruinas de Ollantaytambo": {
+        "clima": ["templado", "seco"],
+        "actividades": ["exploración de ruinas", "caminatas"],
+        "presupuesto": ["medio", "alto"],
+        "preferencias_culturales": ["historia", "cultura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "quechua"]
+    },
+    "Cañon de Apurímac": {
+        "clima": ["templado", "seco"],
+        "actividades": ["senderismo", "rafting", "escalada"],
+        "presupuesto": ["medio", "alto"],
+        "preferencias_culturales": ["naturaleza", "aventura"],
+        "edad_recomendada": ["jóvenes", "adultos"],
+        "idioma_local": ["español", "quechua"]
+    },
+    "Sacsayhuamán": {
+        "clima": ["templado", "seco"],
+        "actividades": ["visitas arqueológicas", "fotografía"],
+        "presupuesto": ["medio", "bajo"],
+        "preferencias_culturales": ["historia", "arquitectura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "San Pedro de Atacama": {
+        "clima": ["desértico", "seco"],
+        "actividades": ["turismo aventura", "observación de estrellas", "fotografía"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["naturaleza", "historia"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Isla de Pascua": {
+        "clima": ["tropical", "húmedo"],
+        "actividades": ["turismo cultural", "buceo", "exploración"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["historia", "cultura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "rapa nui"]
+    },
+    "Torres del Paine": {
+        "clima": ["frío", "seco"],
+        "actividades": ["senderismo", "camping", "observación de fauna"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["naturaleza", "aventura"],
+        "edad_recomendada": ["jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Valparaíso": {
+        "clima": ["templado", "marítimo"],
+        "actividades": ["turismo cultural", "paseos en cerro", "fotografía"],
+        "presupuesto": ["bajo", "medio"],
+        "preferencias_culturales": ["arte", "arquitectura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Santiago": {
+        "clima": ["templado", "seco"],
+        "actividades": ["turismo urbano", "compras", "cultura"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["historia", "gastronomía"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Lago General Carrera": {
+        "clima": ["templado", "húmedo"],
+        "actividades": ["navegación", "pesca", "senderismo"],
+        "presupuesto": ["medio", "bajo"],
+        "preferencias_culturales": ["naturaleza", "relajación"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Punta Arenas": {
+        "clima": ["frío", "seco"],
+        "actividades": ["turismo cultural", "observación de fauna", "fotografía"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["historia", "naturaleza"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Parque Nacional Vicente Pérez Rosales": {
+        "clima": ["templado", "húmedo"],
+        "actividades": ["senderismo", "camping", "observación de fauna"],
+        "presupuesto": ["medio", "bajo"],
+        "preferencias_culturales": ["naturaleza", "aventura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Desierto de Atacama": {
+        "clima": ["desértico", "seco"],
+        "actividades": ["turismo aventura", "observación de estrellas", "fotografía"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["naturaleza", "ciencia"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Parque Nacional Lauca": {
+        "clima": ["frío", "seco"],
+        "actividades": ["senderismo", "observación de fauna", "fotografía"],
+        "presupuesto": ["medio", "bajo"],
+        "preferencias_culturales": ["naturaleza", "cultura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Buenos Aires": {
+        "clima": ["templado", "húmedo"],
+        "actividades": ["turismo urbano", "gastronomía", "vida nocturna"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["cultura", "historia"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Cataratas del Iguazú": {
+        "clima": ["tropical", "húmedo"],
+        "actividades": ["senderismo", "fotografía", "turismo aventura"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["naturaleza", "cultura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Bariloche": {
+        "clima": ["templado", "frío"],
+        "actividades": ["esquí", "senderismo", "turismo aventura"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["naturaleza", "cultura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "El Calafate": {
+        "clima": ["frío", "seco"],
+        "actividades": ["turismo aventura", "senderismo", "observación de glaciares"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["naturaleza", "cultura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Ushuaia": {
+        "clima": ["frío", "húmedo"],
+        "actividades": ["turismo aventura", "navegación", "senderismo"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["naturaleza", "cultura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Córdoba": {
+        "clima": ["templado", "húmedo"],
+        "actividades": ["turismo cultural", "vida nocturna", "compras"],
+        "presupuesto": ["bajo", "medio"],
+        "preferencias_culturales": ["historia", "cultura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Puerto Madryn": {
+        "clima": ["templado", "húmedo"],
+        "actividades": ["observación de fauna", "buceo", "turismo aventura"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["naturaleza", "cultura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Península Valdés": {
+        "clima": ["templado", "seco"],
+        "actividades": ["observación de fauna", "navegación", "fotografía"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["naturaleza", "cultura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Valle de la Luna (Ischigualasto)": {
+        "clima": ["seco", "árido"],
+        "actividades": ["turismo aventura", "senderismo", "fotografía"],
+        "presupuesto": ["medio", "bajo"],
+        "preferencias_culturales": ["naturaleza", "ciencia"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Mar del Plata": {
+        "clima": ["templado", "húmedo"],
+        "actividades": ["playa", "turismo urbano", "vida nocturna"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["relajación", "gastronomía"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Bogotá": {
+        "clima": ["frío", "templado"],
+        "actividades": ["turismo cultural", "vida nocturna", "gastronomía"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["historia", "arte"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Medellín": {
+        "clima": ["cálido", "templado"],
+        "actividades": ["turismo urbano", "vida nocturna", "cultura"],
+        "presupuesto": ["bajo", "medio"],
+        "preferencias_culturales": ["historia", "arte"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Tayrona": {
+        "clima": ["cálido", "húmedo"],
+        "actividades": ["senderismo", "playa", "observación de fauna"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["naturaleza", "cultura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Isla Barú": {
+        "clima": ["cálido", "húmedo"],
+        "actividades": ["playa", "deportes acuáticos", "relajación"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["naturaleza", "gastronomía"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Villa de Leyva": {
+        "clima": ["templado", "seco"],
+        "actividades": ["turismo cultural", "senderismo", "fotografía"],
+        "presupuesto": ["bajo", "medio"],
+        "preferencias_culturales": ["historia", "cultura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Caño Cristales": {
+        "clima": ["tropical", "húmedo"],
+        "actividades": ["senderismo", "fotografía", "turismo aventura"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["naturaleza", "cultura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Barranquilla": {
+        "clima": ["cálido", "húmedo"],
+        "actividades": ["turismo cultural", "fiestas", "gastronomía"],
+        "presupuesto": ["bajo", "medio"],
+        "preferencias_culturales": ["cultura", "gastronomía"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Guatapé": {
+        "clima": ["templado", "húmedo"],
+        "actividades": ["turismo aventura", "paseos en lancha", "senderismo"],
+        "presupuesto": ["medio", "bajo"],
+        "preferencias_culturales": ["naturaleza", "cultura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Cocora Valley": {
+        "clima": ["templado", "húmedo"],
+        "actividades": ["senderismo", "observación de flora", "fotografía"],
+        "presupuesto": ["medio", "bajo"],
+        "preferencias_culturales": ["naturaleza", "cultura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Sierra Nevada de Santa Marta": {
+        "clima": ["frío", "tropical"],
+        "actividades": ["senderismo", "turismo aventura", "observación de fauna"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["naturaleza", "cultura"],
+        "edad_recomendada": ["jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Islas Galápagos": {
+        "clima": ["cálido", "seco"],
+        "actividades": ["observación de fauna", "snorkel", "senderismo"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["naturaleza", "ciencia"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Quito": {
+        "clima": ["templado", "seco"],
+        "actividades": ["turismo cultural", "gastronomía", "visitas históricas"],
+        "presupuesto": ["bajo", "medio"],
+        "preferencias_culturales": ["historia", "arquitectura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Parque Nacional Cotopaxi": {
+        "clima": ["frío", "seco"],
+        "actividades": ["senderismo", "camping", "observación de fauna"],
+        "presupuesto": ["bajo", "medio"],
+        "preferencias_culturales": ["naturaleza", "cultura"],
+        "edad_recomendada": ["jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Guayaquil": {
+        "clima": ["cálido", "húmedo"],
+        "actividades": ["turismo urbano", "gastronomía", "vida nocturna"],
+        "presupuesto": ["bajo", "medio"],
+        "preferencias_culturales": ["cultura", "gastronomía"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Otavalo": {
+        "clima": ["templado", "húmedo"],
+        "actividades": ["mercados", "turismo cultural", "compras de artesanías"],
+        "presupuesto": ["bajo", "medio"],
+        "preferencias_culturales": ["cultura", "artesanía"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Mindo": {
+        "clima": ["cálido", "húmedo"],
+        "actividades": ["observación de aves", "senderismo", "deportes extremos"],
+        "presupuesto": ["bajo", "medio"],
+        "preferencias_culturales": ["naturaleza", "cultura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Cuyabeno": {
+        "clima": ["cálido", "húmedo"],
+        "actividades": ["turismo ecológico", "observación de fauna", "navegación"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["naturaleza", "cultura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Chimborazo": {
+        "clima": ["frío", "seco"],
+        "actividades": ["senderismo", "escalada", "observación de fauna"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["naturaleza", "cultura"],
+        "edad_recomendada": ["jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Puyo": {
+        "clima": ["cálido", "húmedo"],
+        "actividades": ["turismo ecológico", "cultura indígena", "aventura"],
+        "presupuesto": ["bajo", "medio"],
+        "preferencias_culturales": ["naturaleza", "cultura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Vilcabamba": {
+        "clima": ["templado", "húmedo"],
+        "actividades": ["senderismo", "turismo de aventura", "relajación"],
+        "presupuesto": ["bajo", "medio"],
+        "preferencias_culturales": ["naturaleza", "cultura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["español", "inglés"]
+    },
+    "Cristo Redentor": {
+        "clima": ["tropical", "cálido"],
+        "actividades": ["turismo", "fotografía", "visitas culturales"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["historia", "arquitectura", "religión"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["portugués", "inglés"]
+    },
+    "Playa de Copacabana": {
+        "clima": ["tropical", "cálido"],
+        "actividades": ["playa", "vida nocturna", "deportes acuáticos"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["gastronomía", "cultura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["portugués", "inglés"]
+    },
+    "Salvador de Bahía": {
+        "clima": ["tropical", "cálido"],
+        "actividades": ["turismo cultural", "gastronomía", "fiestas"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["cultura", "gastronomía", "historia"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["portugués", "inglés"]
+    },
+    "Rio de Janeiro": {
+        "clima": ["tropical", "cálido"],
+        "actividades": ["turismo", "vida nocturna", "deportes"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["gastronomía", "cultura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["portugués", "inglés"]
+    },
+    "Chapada Diamantina": {
+        "clima": ["templado", "seco"],
+        "actividades": ["senderismo", "turismo de aventura", "observación de la naturaleza"],
+        "presupuesto": ["medio"],
+        "preferencias_culturales": ["naturaleza", "cultura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["portugués", "inglés"]
+    },
+    "Jardim Botânico de Curitiba": {
+        "clima": ["templado", "húmedo"],
+        "actividades": ["turismo", "fotografía", "relajación"],
+        "presupuesto": ["bajo"],
+        "preferencias_culturales": ["naturaleza", "cultura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["portugués", "inglés"]
+    },
+    "Cerro do Rio do Rastro": {
+        "clima": ["templado", "frío"],
+        "actividades": ["turismo", "fotografía", "senderismo"],
+        "presupuesto": ["medio"],
+        "preferencias_culturales": ["naturaleza", "aventura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["portugués", "inglés"]
+    },
+    "São Paulo": {
+        "clima": ["tropical", "cálido"],
+        "actividades": ["turismo", "vida nocturna", "gastronomía"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["gastronomía", "cultura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["portugués", "inglés"]
+    },
+    "Chapada dos Veadeiros": {
+        "clima": ["tropical", "seco"],
+        "actividades": ["senderismo", "observación de fauna", "fotografía"],
+        "presupuesto": ["medio"],
+        "preferencias_culturales": ["naturaleza", "aventura"],
+        "edad_recomendada": ["niños", "jóvenes", "adultos"],
+        "idioma_local": ["portugués", "inglés"]
+    },
+    "Jericoacoara": {
+        "clima": ["tropical", "cálido"],
+        "actividades": ["playa", "windsurf", "senderismo"],
+        "presupuesto": ["alto", "medio"],
+        "preferencias_culturales": ["naturaleza", "aventura"],
+        "edad_recomendada": ["jóvenes", "adultos"],
+        "idioma_local": ["portugués", "inglés"]
+    }
+}
+
+
+    

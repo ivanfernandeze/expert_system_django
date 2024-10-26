@@ -1,31 +1,71 @@
 from experta import Fact, KnowledgeEngine, Rule, MATCH, Field
-from lugares.models import LugarTuristico
+from lugares.models import Destino
 
 class PreferenciaUsuario(Fact):
-    categoria = Field(str, default="")
-    clima = Field(str, default="")
+    clima = Field(str, default="" )
+    actividad = Field(str, default="")
     presupuesto = Field(str, default="")
+    duracion = Field(str, default="")
+    preferencias_culturales = Field(str, default="")
+    edad_recomendada = Field(str, default="")
+    idioma_local = Field(str, default="")
 
 class RecomendacionEngine(KnowledgeEngine):
-    def __init__(self):
+    def __init__(self, preferencias):
         super(RecomendacionEngine, self).__init__()
+        self.preferencias = preferencias
         self.recomendaciones = []
 
-    @Rule(PreferenciaUsuario(categoria='aventura', clima='templado', presupuesto='medio'))
-    def recomendar_machu_picchu(self):
-        self.recomendaciones.append("Machu Picchu")
+    @Rule(PreferenciaUsuario(
+        clima=MATCH.clima,
+        actividad=MATCH.actividad,
+        presupuesto=MATCH.presupuesto,
+        duracion=MATCH.duracion,
+        preferencias_culturales=MATCH.pref_cult,
+        edad_recomendada=MATCH.edad,
+        idioma_local=MATCH.idioma
+    ))
+    def evaluar_preferencias(self, clima, actividad, presupuesto, duracion, pref_cult, edad, idioma):
+        """
+        recorre los destinos basados en los match
+        """
+        pesos = {
+            "clima": 2,
+            "actividades": 4,
+            "presupuesto": 3,
+            "duracion": 1,
+            "preferencias_culturales": 3,
+            "edad_recomendada": 2,
+            "idioma_local": 1
+        }
+        destinos = Destino.objects.all()
+        mejor_puntaje = 0
+        mejor_destino = []
 
-    @Rule(PreferenciaUsuario(categoria='cultural', clima='templado', presupuesto='alto'))
-    def recomendar_torre_eiffel(self):
-        self.recomendaciones.append("Torre Eiffel")
+        for destino in destinos:
+            puntaje = 0
+            if clima in destino.clima:
+                puntaje += pesos.get('clima', 0)
+            if actividad in destino.actividades:
+                puntaje += pesos.get('actividades', 0)
+            if presupuesto in destino.presupuesto:
+                puntaje += pesos.get('presupuesto', 0)
+            if duracion in destino.presupuesto:
+                puntaje += pesos.get('duracion', 0)
+            if pref_cult in destino.preferencias_culturales:
+                puntaje += pesos.get('preferencias_culturales', 0)
+            if edad in destino.edad_recomendada:
+                puntaje += pesos.get('edad_recomendada', 0)
+            if idioma in destino.idioma_local:
+                puntaje += pesos.get('idioma_local', 0)
 
-    @Rule(PreferenciaUsuario(categoria='relajación', clima='caliente', presupuesto='medio'))
-    def recomendar_santorini(self):
-        self.recomendaciones.append("Santorini")
+            if puntaje > mejor_puntaje:
+                mejor_puntaje = puntaje
+                mejor_destino = [destino]
+            elif puntaje == mejor_puntaje:
+                mejor_destino.append(destino)
 
+        self.recomendaciones = mejor_destino
 
-    def obtener_recomendaciones_usuario(self, categoria, clima, presupuesto):
-        self.reset()
-        self.declare(PreferenciaUsuario(categoria=categoria, clima=clima, presupuesto=presupuesto))
-        self.run()
+    def obtener_recomendaciones(self):
         return self.recomendaciones
