@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="mt-10">
+    <h1 class="font-semibold">¿Qué tipo de {{ pregunta|capfirst }} prefieres?</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="my-4 flex justify-start gap-5">
+            {% for opcion in opciones %}
+                <button type="submit" name="{{ pregunta }}" value="{{ opcion }}" class="border-2 border-[#20B08E] px-5 py-1 rounded-sm hover:bg-[#20B08E] hover:text-white transition">
+                    {{ opcion }}
+                </button>
+            {% endfor %}
+        </div>
+    </form>
+</div>
+{% endblock content %}
