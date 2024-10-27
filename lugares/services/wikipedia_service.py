@@ -59,7 +59,7 @@ class WikipediaService:
             R_html.raise_for_status()
             soup = BeautifulSoup(R_html.content, 'html.parser')
 
-            # Buscar todas las etiquetas img dentro del contenido de la página
+            # buscar todas las etiquetas img de la pagina
             content_div = soup.find('div', id='mw-content-text')
             if not content_div:
                 return None
@@ -72,7 +72,7 @@ class WikipediaService:
             if not img_src:
                 return None
 
-            # Manejar URLs que comienzan con '//'
+            # urls que comiencen con //
             if img_src.startswith('//'):
                 img_url = f"https:{img_src}"
             elif img_src.startswith('/'):

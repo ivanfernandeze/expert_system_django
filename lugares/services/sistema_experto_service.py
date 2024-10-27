@@ -23,7 +23,7 @@ def obtener_recomendaciones(preferencias):
         descripcion = destino.descripcion if destino.descripcion else "Descripción no disponible."
         imagen_url = destino.imagen if destino.imagen else "https://via.placeholder.com/300x200.png?text=Sin+Imagen"
         
-        # Calcula el porcentaje de precisión
+        # porcentaje de precision
         porcentaje_precision = (puntaje / max_puntaje) * 100
         recomendaciones.append({
             'nombre': destino.nombre,

@@ -68,6 +68,7 @@ class RecomendacionEngine(KnowledgeEngine):
             for destino, puntaje in puntuaciones 
             if puntaje >= umbral
         ]
+        print(self.recomendaciones)
 
     def obtener_recomendaciones(self):
-        return self.recomendaciones
+        return self.recomendaciones[0:3]
