@@ -70,4 +70,4 @@ class RecomendacionEngine(KnowledgeEngine):
         ]
 
     def obtener_recomendaciones(self):
-        return self.recomendaciones
+        return self.recomendaciones[0:3]
