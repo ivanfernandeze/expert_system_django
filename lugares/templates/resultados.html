@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="">
+    {% if recomendaciones %}
+        <section>
+            <h1 class="font-semibold py-4">Destino</h1>
+            <div class="flex">
+                <div class="basis-1/2 relative">
+                    <img src="{{ recomendaciones.0.imagen_url }}" alt="{{ recomendaciones.0.nombre }}" class="w-full h-full object-cover">
+                    <div class="absolute bottom-4 left-4 w-[85%] bg-white flex rounded-lg">
+                        <div class="basis-[60%] p-8">
+                            <h1 class="text-[#8F8F8F]">Tu Destino</h1>
+                            <h2 class="text-lg font-bold">{{ recomendaciones.0.nombre }}</h2>
+                        </div>
+                        <div class="bg-[#20B08E] basis-[40%] flex justify-center items-center text-white py-8  rounded-lg">
+                            <p>Precisión: {{ recomendaciones.0.porcentaje_precision }}%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="basis-1/2 flex flex-col justify-center p-4">
+                    <h1 class="font-semibold">Informacion</h1>
+                    <p>{{ recomendaciones.0.descripcion }}</p>
+                </div>
+            </div>
+            <h1 class="font-semibold py-4">Destinos similares</h1>
+            <div class="flex flex-wrap gap-3">
+            {% for recomendacion in recomendaciones %}
+                {% if forloop.first %}
+                {% else %}
+                <div class="p-4 w-[320px] bg-[#F6F6F6]">
+                    <!-- <p>{{ recomendacion.descripcion }}</p> -->
+                    <div class="w-full">
+                        <img src="{{ recomendacion.imagen_url }}" alt="{{ recomendacion.nombre }}" class="h-[50svh] object-cover">
+                    </div>
+                    <div class="py-1">
+                        <h2 class="font-semibold">{{ recomendacion.nombre }}</h2>
+                        <p class="text-[#8F8F8F]">Precisión: {{ recomendacion.porcentaje_precision }}%</p>
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+            </div>
+        </section>
+    {% else %}
+        <p>No se encontraron recomendaciones.</p>
+    {% endif %}
+    <div class="flex justify-end items-center py-4">
+        <a href="{% url 'preguntas' %}" class="bg-[#20B08E] text-white px-4 py-2 rounded-sm">Volver a empezar</a>
+    </div>
+</div>
+{% endblock content %}
